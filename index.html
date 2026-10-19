@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="NEXTWAVEのふわっち配信ガイド。始める前に、配信の準備、基本、伸びるコツをひとつずつ。">
+  <meta name="theme-color" content="#f0f8ff">
+  <title>ふわっち配信ガイド｜NEXTWAVE</title>
+  <link rel="stylesheet" href="styles.css?v=20261019-dojo-mascots">
+  <script src="content.js?v=20261019-dojo-mascots" defer></script>
+  <script src="search.js?v=20261019-dojo-mascots" defer></script>
+  <script src="clipboard.js?v=20261019-dojo-mascots" defer></script>
+  <script src="guide.js?v=20261019-dojo-mascots" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#guide">ガイドへ移動</a>
+  <div class="wrap">
+    <header class="hero">
+      <div class="brand">
+        <img class="brand-logo" src="assets/nextwave-logo.png" width="1254" height="1254" alt="NEXTWAVEのロゴ" decoding="async">
+        <p class="logo">NEXTWAVE</p>
+      </div>
+      <p class="eyebrow">ふわっち配信ガイド</p>
+      <h1>あなたの個性に<br><span class="underline">最高の応援を。</span></h1>
+      <p class="intro">必要なところから、ひとつずつ。</p>
+    </header>
+    <main id="guide" tabindex="-1">
+      <div class="discovery">
+        <form id="search-form" class="search-box" role="search">
+          <label class="sr-only" for="guide-search">ガイド・用語集をキーワードで検索</label>
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <input id="guide-search" type="search" placeholder="キーワードで探す" maxlength="80" autocomplete="off" spellcheck="false" aria-describedby="search-help" aria-controls="search-results">
+          <button id="clear-search" class="clear-search" type="button" aria-label="検索をクリア" hidden>×</button>
+        </form>
+        <p id="search-help" class="sr-only">例：ひよこ、視聴者レベル、音楽。ガイドと用語集をまとめて検索します。</p>
+        <div id="guide-tabs" class="view-tabs" role="tablist" aria-label="ガイドの見方">
+          <button id="tab-guide" role="tab" type="button" aria-selected="true" aria-controls="panel-guide">配信ガイド</button>
+          <button id="tab-glossary" role="tab" type="button" aria-selected="false" aria-controls="panel-glossary" tabindex="-1">用語集</button>
+        </div>
+      </div>
+      <section id="search-results" class="search-results" aria-labelledby="search-heading" hidden>
+        <div class="section-intro"><h2 id="search-heading">検索結果</h2><p id="search-count" role="status" aria-live="polite" aria-atomic="true"></p></div>
+        <div id="result-list" class="result-list"></div>
+        <div id="search-empty" class="empty-state" hidden><p class="empty-title">見つかりませんでした</p><p>短い言葉や、別の言い方で探してみよう。</p><button id="reset-search" class="text-button" type="button">検索をクリアして戻る</button></div>
+      </section>
+      <section id="panel-guide" role="tabpanel" aria-labelledby="tab-guide">
+        <div class="section-intro"><h2>まずは「0」から</h2><p>開く → 画像をスワイプ</p></div>
+        <div id="chapters"></div>
+      </section>
+      <section id="panel-glossary" role="tabpanel" aria-labelledby="tab-glossary" hidden>
+        <div class="section-intro"><h2>ことばを知ろう</h2><p>用語を開くと、要点が読めます</p></div>
+        <div id="glossary-list" class="glossary-list"></div>
+      </section>
+      <noscript><p class="no-script">このガイドを表示するには、ブラウザーのJavaScriptを有効にしてください。</p></noscript>
+    </main>
+    <footer class="footer">
+      <p class="footer-logo">NEXTWAVE</p>
+      <p>あなたの個性に最高の応援を。</p>
+    </footer>
+  </div>
+  <dialog id="image-viewer" aria-label="画像の拡大表示">
+    <form method="dialog"><button class="viewer-close" aria-label="拡大表示を閉じる">閉じる <span aria-hidden="true">×</span></button></form>
+    <img id="viewer-image" alt="">
+  </dialog>
+</body>
+</html>

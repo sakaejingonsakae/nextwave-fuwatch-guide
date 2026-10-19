@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1000" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2=".85" y2="1">
+      <stop stop-color="#d4ebff" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#eef8ff" stop-opacity=".45"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#abd1f5" stop-opacity=".5"/>
+      <stop offset=".55" stop-color="#cfe6ff" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#edf8ff" stop-opacity=".4"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="0" y1="0" x2=".7" y2="1">
+      <stop stop-color="#b8d8f4" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#e1f1ff" stop-opacity=".85"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 0H1440V242C1250 292 1120 50 880 88C630 132 590 262 350 196C170 150 100 62 0 106Z" fill="url(#top)"/>
+  <path d="M-20 128C160 48 248 216 462 202C660 189 768 93 1007 136C1178 169 1348 292 1460 234L1460 268C1277 340 1092 206 906 178C692 148 614 245 441 242C235 237 162 98 -20 154Z" fill="url(#ribbon)"/>
+  <path d="M-20 667C190 592 388 862 626 814C938 750 1119 710 1460 845V1000H-20Z" fill="url(#bottom)"/>
+  <path d="M-20 712C215 646 389 900 677 846C994 786 1190 824 1460 897V1000H-20Z" fill="#cde6fc" fill-opacity=".55"/>
+  <path d="M-20 802C286 716 400 972 716 895C1000 826 1202 956 1460 945V1000H-20Z" fill="#eef8ff" fill-opacity=".8"/>
+  <g fill="none" stroke="#a2c8ec" stroke-opacity=".58" stroke-width="1.1">
+    <path d="M-20 118C160 38 248 206 462 192C660 179 768 83 1007 126C1178 159 1348 282 1460 224" vector-effect="non-scaling-stroke"/>
+    <path d="M-20 165C162 109 235 248 441 253C614 256 692 159 906 189C1092 217 1277 351 1460 279" vector-effect="non-scaling-stroke"/>
+    <path d="M-20 648C190 573 388 843 626 795C938 731 1119 691 1460 826" vector-effect="non-scaling-stroke"/>
+    <path d="M-20 690C190 615 388 885 626 837C938 773 1119 733 1460 868" vector-effect="non-scaling-stroke"/>
+    <path d="M-20 782C286 696 400 952 716 875C1000 806 1202 936 1460 925" vector-effect="non-scaling-stroke"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="1.6">
+    <path d="M-20 141C160 61 248 229 462 215C660 202 768 106 1007 149C1178 182 1348 305 1460 247" vector-effect="non-scaling-stroke"/>
+    <path d="M-20 730C215 664 389 918 677 864C994 804 1190 842 1460 915" vector-effect="non-scaling-stroke"/>
+  </g>
+</svg>
